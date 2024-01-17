@@ -54,13 +54,17 @@ function ProductItemPage() {
       <Layout>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 px-4 py-4 max-w-screen-xl">
           {product && <ProductImage imageUrl={product.imageUrl} />}
-          {product && <ProductDetails product={product} />}
-          <QuantitySelector
-            quantity={quantity}
-            onDecrease={() => setQuantity((prev) => Math.max(prev - 1, 1))}
-            onIncrease={() => setQuantity((prev) => prev + 1)}
-          />
-          {product && <AddToCartButton onClick={addCart} />}
+          <div className="w-full flex flex-col justify-start items-start px-5 pt-0 pb-10 lg:py-10 mx-auto gap-2">
+            {product && <ProductDetails product={product} />}
+            <div className="min-w-full flex flex-col sm:flex-row justify-between gap-2 my-4">
+              <QuantitySelector
+                quantity={quantity}
+                onDecrease={() => setQuantity((prev) => Math.max(prev - 1, 1))}
+                onIncrease={() => setQuantity((prev) => prev + 1)}
+              />
+              {product && <AddToCartButton onClick={addCart} />}
+            </div>
+          </div>
         </div>
       </Layout>
     </div>

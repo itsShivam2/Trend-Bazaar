@@ -30,8 +30,7 @@ function ProductDetails({ product }) {
           ₹{product.newPrice}
         </p>
       </div>
-      <div className="min-w-full flex flex-col sm:flex-row justify-between gap-2 my-4">
-      </div>
+     
     </div>
   );
 }
