@@ -79,29 +79,16 @@ export default function Navbar() {
                   type="button"
                   className="relative rounded-full bg-white p-1 text-black-400 hover:text-black focus:outline-black focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
-                  {user ? (
-                    <Link to="/cart">
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">View notifications</span>
-                      {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
-                      <img
-                        src={IconsAndImages.cart}
-                        className="h-7 w-7 sm:h-8 sm:w-8"
-                        aria-hidden="true"
-                      />
-                    </Link>
-                  ) : (
-                    <Link to="/signin">
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">View notifications</span>
-                      {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
-                      <img
-                        src={IconsAndImages.cart}
-                        className="h-7 w-7 sm:h-8 sm:w-8"
-                        aria-hidden="true"
-                      />
-                    </Link>
-                  )}
+                  <Link to="/cart">
+                    <span className="absolute -inset-1.5" />
+                    <span className="sr-only">View notifications</span>
+                    {/* <BellIcon className="h-6 w-6" aria-hidden="true" /> */}
+                    <img
+                      src={IconsAndImages.cart}
+                      className="h-7 w-7 sm:h-8 sm:w-8"
+                      aria-hidden="true"
+                    />
+                  </Link>
                 </button>
 
                 {/* Profile dropdown */}

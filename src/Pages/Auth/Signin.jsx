@@ -82,14 +82,14 @@ function Signin() {
                   <ActionButton label="Sign in" onClick={signin} />
                 </div>
                 
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                   <span className="w-1/3 h-[2px] bg-gray-500"></span>
                   <div className="">
                     <p className="font-[Montserrat] mx-2">OR</p>
                   </div>
                   <span className="w-1/3 h-[2px] bg-gray-500"></span>
-                </div>
-                <GoogleAuthButton label="Sign in with Google" />
+                </div> */}
+                {/* <GoogleAuthButton label="Sign in with Google" /> */}
                 <p className="font-[Montserrat] text-center text-sm text-gray-500">
                   Don't have an account yet?
                   <Link

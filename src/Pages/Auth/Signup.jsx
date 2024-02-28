@@ -153,18 +153,18 @@ function Signup() {
                 <ActionButton label="Sign up" onClick={signup} />
               </div>
 
-              <div className="flex items-center justify-center">
+              {/* <div className="flex items-center justify-center">
                 <span className="w-1/3 h-[2px] bg-gray-500"></span>
                 <div className="">
                   <p className="font-[Montserrat] mx-2">OR</p>
                 </div>
                 <span className="w-1/3 h-[2px] bg-gray-500"></span>
-              </div>
+              </div> */}
 
-              <GoogleAuthButton
+              {/* <GoogleAuthButton
                 label="Sign up with Google"
                 onClick={signupWithGoogle}
-              />
+              /> */}
               <p className="font-[Montserrat] text-center text-sm text-gray-500">
                 Already have an account?
                 <Link

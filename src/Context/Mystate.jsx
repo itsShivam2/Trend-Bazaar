@@ -18,6 +18,8 @@ import { fireDB } from "../Firebase/FireBaseConfig";
 function MyState(props) {
   const [loading, setLoading] = useState(false);
 
+
+
   const [products, setProducts] = useState({
     title: null,
     oldPrice: null,
@@ -34,7 +36,9 @@ function MyState(props) {
     }),
   });
 
-  // Add Product Section
+
+
+  // Add Product
   const addProduct = async () => {
     if (
       products.title == null ||
@@ -67,7 +71,9 @@ function MyState(props) {
 
   const [product, setProduct] = useState([]);
 
-  // Get Product Section
+
+
+  // Get Product
   const getProductData = async () => {
     setLoading(true);
     try {
@@ -98,6 +104,8 @@ function MyState(props) {
   const edithandle = (item) => {
     setProducts(item);
   };
+
+
   // update product
   const updateProduct = async (item) => {
     setLoading(true);
@@ -117,6 +125,8 @@ function MyState(props) {
     // setProducts({});
   };
 
+
+  //Dlete product
   const deleteProduct = async (item) => {
     setLoading(true);
     try {
